@@ -9,6 +9,31 @@
 </head>
 
 <body>
+  <style>
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .flex-row-reverse {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+    }
+
+    .red {
+      background-color: darksalmon;
+      border: 1px solid red;
+      border-radius: 10px;
+      min-width: 23px !important;
+      min-height: 23px !important;
+    }
+
+    .bdr-red {
+      border: 1px solid red;
+    }
+  </style>
   <h1>Mark Davich</h1>
   <ul>
     <li>Born in Boise Idaho 1979</li>
@@ -33,6 +58,21 @@
     </li>
     <li>Band <a href="https://flatdogensemble.bandcamp.com/releases" target="_blank"> Flatdog Ensemble</a></li>
   </ul>
+  <div class="bdr-red flex-row">
+    <div class="red">flex-row</div>
+    <div class="red">flex-row</div>
+    <div class="red">flex-row</div>
+    <div class="red">flex-row</div>
+    <div class="red">flex-row</div>
+  </div>
+  <div class="bdr-red flex-row-reverse">
+    <div class="red">flex-row-reverse</div>
+    <div class="red">flex-row-reverse</div>
+    <div class="red">flex-row-reverse</div>
+    <div class="red">flex-row-reverse</div>
+    <div class="red">flex-row-reverse</div>
+  </div>
+  <div style="border: 1px solid red">Hello</div>
 </body>
 
 </html>
